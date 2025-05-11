@@ -13,6 +13,10 @@ const Hero = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-in');
             entry.target.classList.remove('opacity-0'); // Remove opacity-0 class when visible
+            // Ensure elements stay visible after animation completes
+            setTimeout(() => {
+              if (entry.target) entry.target.classList.add('opacity-100');
+            }, 500);
             observer.unobserve(entry.target);
           }
         });
@@ -51,7 +55,7 @@ const Hero = () => {
       
       <div className="section-container relative z-10">
         <div className="max-w-3xl">
-          <p className="text-highlight mb-3 font-medium animate-fade-in">Hello, I'm</p>
+          <p className="text-highlight mb-3 font-medium animate-fade-in opacity-0">Hello, I'm</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-heading animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
             <span className="text-light">Your Name</span>
           </h1>
@@ -77,11 +81,11 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div ref={skillsRef} className="flex flex-wrap gap-3 opacity-0">
+          <div ref={skillsRef} className="flex flex-wrap gap-3">
             {["JavaScript", "React", "TypeScript", "Node.js", "UI/UX Design"].map((skill) => (
               <span 
                 key={skill} 
-                className="px-3 py-1 rounded-full text-sm bg-light/10 text-light/80 border border-light/20"
+                className="px-3 py-1 rounded-full text-sm bg-light/10 text-light/80 border border-light/20 opacity-0"
               >
                 {skill}
               </span>

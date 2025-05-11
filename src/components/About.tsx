@@ -31,6 +31,15 @@ const About = () => {
                 }, index * 200);
               }
             });
+            // Ensure elements stay visible after animation by adding opacity-100
+            const animatedElements = entry.target.querySelectorAll('.opacity-0');
+            animatedElements.forEach((el) => {
+              el.classList.add('animate-fade-in');
+              el.classList.remove('opacity-0');
+              setTimeout(() => {
+                el.classList.add('opacity-100');
+              }, 500);
+            });
             observer.unobserve(entry.target);
           }
         });
@@ -49,11 +58,6 @@ const About = () => {
       }
     };
   }, [skills]);
-
-  // Helper function to add animation classes but ensure elements stay visible
-  const withFadeIn = (delay: number) => {
-    return `animate-fade-in opacity-0 animate-once animate-fill-forwards animate-duration-500 animate-delay-${delay}`;
-  };
 
   return (
     <section id="about" className="bg-dark py-20">

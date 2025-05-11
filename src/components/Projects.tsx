@@ -61,6 +61,10 @@ const Projects = () => {
               setTimeout(() => {
                 card.classList.add('animate-fade-in');
                 card.classList.remove('opacity-0');
+                // Ensure elements stay visible after animation
+                setTimeout(() => {
+                  card.classList.add('opacity-100');
+                }, 500);
               }, index * 200);
             });
             observer.unobserve(entry.target);

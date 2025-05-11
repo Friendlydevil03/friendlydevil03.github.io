@@ -24,6 +24,11 @@ const AnimatedText = ({
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-in');
             entry.target.classList.remove('opacity-0');
+            // Make sure animations persist after they complete
+            setTimeout(() => {
+              entry.target.classList.add('opacity-100');
+            }, 500); // Match this to animation duration
+            
             if (once) {
               observer.unobserve(entry.target);
             }
@@ -35,7 +40,7 @@ const AnimatedText = ({
       },
       {
         threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px',
+        rootMargin: '0px 0px -50px 0px', // Triggers animation a bit earlier
       }
     );
 
