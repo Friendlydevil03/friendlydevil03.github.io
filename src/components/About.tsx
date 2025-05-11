@@ -78,15 +78,15 @@ const About = () => {
             
             <div className="space-y-4">
               <p className="text-light/70 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                I'm a passionate [Your Profession] with a strong foundation in [Your Key Skills]. 
-                My journey in this field began [brief background story].
+                I'm a passionate Final Year with a strong foundation in coding and designing. 
+                My journey in this field began when i am stuyding 10 std i got passionate in using the computer and time flow while i learn new thing.
               </p>
               <p className="text-light/70 opacity-0 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                I specialize in creating [what you create] that not only look great but also solve real problems. 
-                My approach combines [your strengths] with a deep understanding of [industry knowledge].
+                I specialize in creating web application and software that not only look great but also solve real problems. 
+                My approach combines finding problems and fixing with a deep understanding of coding.
               </p>
               <p className="text-light/70 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-                When I'm not coding or designing, you can find me [your hobbies/interests]. 
+                When I'm not coding or designing, you can find me reading book,comics,and learning new things. 
                 I believe that these activities help me bring a fresh perspective to my work.
               </p>
             </div>
