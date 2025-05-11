@@ -23,11 +23,13 @@ const AnimatedText = ({
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-in');
+            entry.target.classList.remove('opacity-0');
             if (once) {
               observer.unobserve(entry.target);
             }
           } else if (!once) {
             entry.target.classList.remove('animate-fade-in');
+            // Don't add opacity-0 back when element leaves viewport
           }
         });
       },

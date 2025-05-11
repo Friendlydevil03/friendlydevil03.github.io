@@ -12,6 +12,7 @@ const Hero = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-in');
+            entry.target.classList.remove('opacity-0'); // Remove opacity-0 class when visible
             observer.unobserve(entry.target);
           }
         });

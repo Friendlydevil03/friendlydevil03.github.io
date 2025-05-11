@@ -27,6 +27,7 @@ const About = () => {
               if (bar instanceof HTMLElement) {
                 setTimeout(() => {
                   bar.style.width = `${skills[index].percentage}%`;
+                  bar.classList.remove('w-0'); // Remove initial zero width
                 }, index * 200);
               }
             });
@@ -48,6 +49,11 @@ const About = () => {
       }
     };
   }, [skills]);
+
+  // Helper function to add animation classes but ensure elements stay visible
+  const withFadeIn = (delay: number) => {
+    return `animate-fade-in opacity-0 animate-once animate-fill-forwards animate-duration-500 animate-delay-${delay}`;
+  };
 
   return (
     <section id="about" className="bg-dark py-20">
@@ -103,7 +109,7 @@ const About = () => {
                     <span className="text-highlight">{skill.percentage}%</span>
                   </div>
                   <div className="skill-bar">
-                    <div className="skill-progress"></div>
+                    <div className="skill-progress w-0"></div>
                   </div>
                 </div>
               ))}

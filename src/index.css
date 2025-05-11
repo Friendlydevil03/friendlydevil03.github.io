@@ -102,6 +102,15 @@
   }
 }
 
+/* Custom animation classes */
+.animate-once {
+  animation-iteration-count: 1;
+}
+
+.animate-fill-forwards {
+  animation-fill-mode: forwards;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

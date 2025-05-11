@@ -60,6 +60,7 @@ const Projects = () => {
             projectCards.forEach((card, index) => {
               setTimeout(() => {
                 card.classList.add('animate-fade-in');
+                card.classList.remove('opacity-0');
               }, index * 200);
             });
             observer.unobserve(entry.target);
