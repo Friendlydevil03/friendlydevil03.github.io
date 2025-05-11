@@ -57,14 +57,12 @@ const Hero = () => {
         <div className="max-w-3xl">
           <p className="text-highlight mb-3 font-medium animate-fade-in opacity-0">Hello, I'm</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-heading animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
-            <span className="text-light">Your Name</span>
+            <span className="text-light">Srivenkatesh R</span>
           </h1>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-light/70 mb-6 font-heading animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
-            I create digital experiences
-          </h2>
+       
           <p className="text-light/60 text-lg mb-8 max-w-xl animate-fade-in opacity-0" style={{ animationDelay: '0.6s' }}>
-            I'm a passionate [your profession] specializing in building exceptional 
-            digital experiences. With a focus on [your skills], I bring creative 
+            I'm a passionate Developer and Designer specializing in building exceptional 
+            digital experiences. With a focus on coding, I bring creative 
             solutions to complex problems.
           </p>
 
