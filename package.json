@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Friendlydevil03.github.io/flair-folio-flow",
+  "homepage": "https://Friendlydevil03.github.io/My-portfoliio",
   "type": "module",
   "scripts": {
     "dev": "vite",
