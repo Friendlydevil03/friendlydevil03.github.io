@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "Your Portfolio | Developer & Designer";
+    document.title = "Srivenkatesh R | Developer & Designer";
   }, []);
 
   return (
