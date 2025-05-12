@@ -20,35 +20,58 @@ const Projects = () => {
     {
       id: 1,
       title: "Project One",
-      category: "Web Development",
-      description: "A responsive web application built with React and TypeScript",
+      category: "Application Development",
+      description: "A smart vechile parking system using python and flask",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       link: "#",
     },
     {
       id: 2,
       title: "Project Two",
-      category: "UI/UX Design",
-      description: "A user interface design project for a mobile application",
+      category: "Web Application",
+      description: "A web applcation for fuel payment using rfid built with React Native",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
       link: "#",
     },
     {
       id: 3,
       title: "Project Three",
-      category: "Mobile Development",
-      description: "A cross-platform mobile app built with React Native",
+      category: "Web Application",
+      description: "A web application for phising detection websites ",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
       link: "#",
     },
     {
       id: 4,
       title: "Project Four",
-      category: "Web Application",
-      description: "A full-stack web application with Node.js backend",
+      category: "UI/UX Design",
+      description: "A UI/UX design project for a web application",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
       link: "#",
     },
+      // Add this to your existing projects array
+    {
+      id: "smart-parking-system",
+      title: "Smart Parking Management System",
+      description: "An intelligent parking management solution built with Python and TkInter that uses computer vision to detect, track, and allocate parking spaces in real-time.",
+      technologies: ["Python", "PureBasic", "Computer Vision", "TkInter"],
+      githubUrl: "https://github.com/Friendlydevil03/park9-main",
+      imageUrl: "/images/parking-system.png", // You'll need to add this image to your portfolio
+      features: [
+        "Real-time vehicle detection and tracking",
+        "Automated parking space allocation",
+        "Comprehensive statistics and reporting",
+        "User-friendly monitoring dashboard",
+        "Multiple video source support"
+      ],
+      challenges: [
+        "Implementing reliable computer vision algorithms for varying light conditions",
+        "Designing efficient parking space allocation algorithms",
+        "Creating a responsive and intuitive user interface"
+      ],
+      category: "Computer Vision",
+      date: "2023" // Update with the actual date
+    }
   ];
   
   useEffect(() => {
