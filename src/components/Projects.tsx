@@ -50,27 +50,62 @@ const Projects = () => {
       link: "#",
     },
       // Add this to your existing projects array
+    // Add this to your existing projects array or modify an existing entry
     {
-      id: "smart-parking-system",
+      id: 5,
       title: "Smart Parking Management System",
-      description: "An intelligent parking management solution built with Python and TkInter that uses computer vision to detect, track, and allocate parking spaces in real-time.",
+      description: "An intelligent parking management solution that uses computer vision to detect, track, and allocate parking spaces in real-time.",
+      shortDescription: "Computer vision-powered parking management system", // For cards/previews
       technologies: ["Python", "PureBasic", "Computer Vision", "TkInter"],
       githubUrl: "https://github.com/Friendlydevil03/park9-main",
-      imageUrl: "/images/parking-system.png", // You'll need to add this image to your portfolio
-      features: [
-        "Real-time vehicle detection and tracking",
-        "Automated parking space allocation",
-        "Comprehensive statistics and reporting",
-        "User-friendly monitoring dashboard",
-        "Multiple video source support"
-      ],
-      challenges: [
-        "Implementing reliable computer vision algorithms for varying light conditions",
-        "Designing efficient parking space allocation algorithms",
-        "Creating a responsive and intuitive user interface"
-      ],
+      date: "2023", // Update with actual date
       category: "Computer Vision",
-      date: "2023" // Update with the actual date
+
+      // Screenshots - adjust paths as needed for your portfolio structure
+      mainImage: "/images/projects/parking-system/screenshot1.png",
+      images: [
+        {
+          src: "/images/projects/parking-system/screenshot1.png",
+          alt: "Dashboard view showing parking allocation"
+        },
+        {
+          src: "/images/projects/parking-system/screenshot2.png",
+          alt: "Vehicle detection in action"
+        },
+        {
+          src: "/images/projects/parking-system/screenshot3.png",
+          alt: "Statistics and reporting panel"
+        },
+        {
+          src: "/images/projects/parking-system/screenshot4.png",
+          alt: "Setup and configuration interface"
+        }
+      ],
+
+      // Detailed information for the project page
+      details: {
+        overview: "This Smart Parking Management System leverages computer vision techniques to transform standard video feeds into intelligent parking solutions. The system can detect available spaces, track vehicles, and provide real-time statistics on parking usage.",
+
+        features: [
+          "Real-time vehicle detection using computer vision algorithms",
+          "Automated parking space allocation to optimize space usage",
+          "Dynamic visualization of parking availability",
+          "Comprehensive statistics and usage reporting",
+          "Support for multiple video sources including live camera feeds",
+          "Configurable detection parameters for different environments"
+        ],
+
+        implementation: "Built using Python with TkInter for the UI and OpenCV for image processing. The application uses a modular architecture with separate components for detection, allocation, visualization, and monitoring. PureBasic was used for certain performance-critical components.",
+
+        challenges: [
+          "Implementing reliable vehicle detection in varying lighting conditions",
+          "Creating efficient parking allocation algorithms for different lot types",
+          "Building a responsive UI that updates in real-time without performance issues",
+          "Managing concurrent processing of video feeds"
+        ],
+
+        learnings: "This project deepened my understanding of computer vision techniques and real-time processing. I learned how to optimize image processing algorithms for performance and how to design intuitive interfaces for complex monitoring systems."
+      }
     }
   ];
   
