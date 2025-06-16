@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: "/",  // Set base to root since this is a user/organization page
   plugins: [
     react(),
     mode === 'development' &&
